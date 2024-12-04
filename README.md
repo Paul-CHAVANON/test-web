@@ -2,7 +2,7 @@
 Ce repository, permet de pull un site web de test rapidement.
 
 
-Dans votre dossier dédié au projet, installer un serveur WEB
+Dans votre dossier dédié au projet, installer un serveur WEB </br>
 Installer docker puis entrer le config du docker compose comme suit
 ```
 services:
