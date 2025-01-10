@@ -3,7 +3,7 @@ Ce repository, permet de pull un site web de test rapidement.
 
 
 Dans votre dossier dédié au projet, installer un serveur WEB </br>
-Installer docker puis entrer le config du docker compose comme suit
+Installer docker puis entrer le config du docker compose comme suit, suivre la doc sur le site de docker pour l'installation https://docs.docker.com/engine/install/ubuntu/
 ```
 services:
   apache2:
