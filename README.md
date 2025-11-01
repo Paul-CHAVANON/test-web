@@ -23,4 +23,4 @@ sudo git init
 sudo git pull https://github.com/Paul-CHAVANON/test-web.git
 ```
 
-Afficher le sereur WEB = IP-SERVEUR:8080
+Afficher le sereur WEB = <ip_serveur>:8080
