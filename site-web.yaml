@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: test-web-deployment
 spec:
-  replicas: 3 # Un pod sur chaque VM (13, 14 et 15)
+  replicas: 3 # Un pod sur chaque VM
   selector:
     matchLabels:
       app: test-web
