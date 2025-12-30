@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-web-deployment
+spec:
+  replicas: 3 # Un pod sur chaque VM (13, 14 et 15)
+  selector:
+    matchLabels:
+      app: test-web
+  template:
+    metadata:
+      labels:
+        app: test-web
+    spec:
+      containers:
+      - name: nginx-web
+        image: ghcr.io/paul-chavanon/test-web:latest
+        ports:
+        - containerPort: 80
+      imagePullSecrets:
+      - name: ghcr-secret
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: test-web-service
+spec:
+  type: NodePort
+  selector:
+    app: test-web
+  ports:
+    - port: 80
+      targetPort: 80
+      nodePort: 30080 # Port d'accès externe
