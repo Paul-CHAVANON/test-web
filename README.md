@@ -1,3 +1,6 @@
+# Projet soumis à licence
+Voir fichier LICENSE
+
 # test-web
 Ce repository, permet de pull un site web de test rapidement.
 
