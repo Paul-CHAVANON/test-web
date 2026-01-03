@@ -9,7 +9,7 @@ Avec le fichier site-web.yaml lancer 3 pods contenant l'image test-web
 ```
 sudo kubectl apply -f site-web.yaml
 ```
-
+Afficher le serveur WEB = <ip_serveur>:30080
 ## Déploiement avec Docker
 Dans votre dossier dédié au projet, installer un serveur WEB </br>
 Installer docker puis entrer le config du docker compose comme suit, suivre la doc sur le site de docker pour l'installation https://docs.docker.com/engine/install/ubuntu/
@@ -31,5 +31,4 @@ sudo apt install git
 sudo git init
 sudo git pull https://github.com/Paul-CHAVANON/test-web.git
 ```
-
-Afficher le sereur WEB = <ip_serveur>:8080
+Afficher le serveur WEB = <ip_serveur>:8080
